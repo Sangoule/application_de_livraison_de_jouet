@@ -23,7 +23,6 @@ class _MyRegisterState extends State<MyRegister> {
         ),
         body: Stack(
           children: [
-    
             SingleChildScrollView(
               child: Container(
                 padding: EdgeInsets.only(

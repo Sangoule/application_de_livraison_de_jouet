@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yonima/Contenu/accueil.dart';
+import 'package:yonima/Contenu/profil.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -21,7 +22,6 @@ class _MyLoginState extends State<MyLogin> {
         body: Stack(
           children: [
             Container(),
-          
             SingleChildScrollView(
               child: Container(
                 padding: EdgeInsets.only(
@@ -70,11 +70,11 @@ class _MyLoginState extends State<MyLogin> {
                               ),
                               CircleAvatar(
                                 radius: 30,
-                                backgroundColor: Color.fromARGB(255, 57, 98, 211),
+                                backgroundColor: Color.fromARGB(255, 30, 98, 244),
                                 child: IconButton(
                                     color: Colors.white,
                                     onPressed: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                                      Navigator.pushNamed(context, 'accueil');
                                     },
                                     icon: Icon(
                                       Icons.arrow_forward,
